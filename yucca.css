@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #D3CBC0;
+}
+@font-face {
+    font-family: Magnetlight;
+    src: url(/Magnetik-Light.otf);
+}
+@font-face {
+    font-family: magnetregular;
+    src: url(/Magnetik-Regular.otf);
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0px 150px;
+    z-index: 1;
+    border-bottom:0.2px solid #717767;
+}
+nav p{
+    font-family: magnetlight;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+
+    height: 100%;
+
+    line-height: 15px;
+}
+.logo p span{
+    font-weight: 800 !important;
+    font-family: magnetregular;
+}
+.nav-links{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links p{
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+}
+.button-container{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: end;
+}
+.credit-text{
+    display: flex;
+    gap: 5px;
+    margin-right: 15px;
+}
+.credit-text h4{
+    font-family: magnetlight;
+    font-size: 12px;
+    color: #717767;
+}
+.credit-svg{
+    border: 1px solid transparent;
+}
+.cart-svg,.profile-svg{
+    border: 1px solid #403F3D;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 28px;
+}
+main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #00000000;
+    position: absolute;
+    top: 0;
+    padding-top: 120px;
+    padding-left: 150px;
+}
+.overlay h1{
+    width: 50%;
+    font-size: 60px;
+    font-family: magnetlight;
+    margin-bottom: 130px;
+}
+.card-container{
+   display: flex;
+   gap: 20px;
+   width: 100%;
+}
+.card{
+    height: 280px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.389);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: all ease 0.3s;
+    position: relative;
+
+}
+.text-container p{
+    font-size: 26px;
+    font-family: magnetlight;
+    transition: all ease 0.3s;
+
+}
+.text-container{
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card:hover p{
+    margin-top: -20%;
+}
+.pragaraph-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    left:0;
+    gap: 2px;
+    bottom: 40%;
+    z-index: 9999;
+    /* position: relative; */
+}
+.pragaraph-container .para {
+    width: 100%;
+    height: 2vh;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+.pragaraph-container .para h4{
+    font-size: 12px;
+    position: absolute;
+    width: 500px;
+    height: 2vh;
+    left: 10%;
+    top: 100%;
+    
+    font-family: magnetlight;
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+
+.card:hover .pragaraph-container .para h4{
+    /* margin-top: 20px; */
+    opacity: 1;
+    top:0;
+}
+
+.line{
+    height: 1px;
+    width: 0%;
+    background-color: #000;
+    position: absolute;
+    left:0;
+    bottom: 15%;
+    transition: all 0.5s ease;
+}
+
+.card:hover .line{
+    width:100%;
+}
+
+.marquee{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.marquee img{
+    /* height: 20%;
+    width: 50%; */
+
+    scale: 0.6;
+}
+
+.marquee-overlay{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top:0; 
+    left:0;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.marquee-divs{
+    display: flex;
+}
+.marquee-container{
+    display: flex;
+}
